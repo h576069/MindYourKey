@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  table, th, td {
+           border: 2px solid black;
+           text-align: center;
+        }
+        body {
+    background: -webkit-linear-gradient(left, #2382C4, #C9DCB9);
+    background: -o-linear-gradient(right, #2382C4, #C9DCB9);
+    background: -moz-linear-gradient(right, #2382C4, #C9DCB9);
+    background: linear-gradient(to right, #2382C4, #C9DCB9);
+    background-color: #2382C4;
+}
+  </style>
 </head>
-<style>
-</style>
 <body>
-  <img border="5"src = "https://media.giphy.com/media/nPIwhYMeBkis0/giphy.gif" width = "350" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
-  <p>Vi ønsker at DU skal finne nøkkelen din!</p>
-<a href="https://www.w3schools.com">Dette er linken til ...</a>
+  <img border="5"src = "https://media.giphy.com/media/nPIwhYMeBkis0/giphy.gif" width = "550" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
+  <center style="font-family:courier;" size= "+5"> Vi ønsker at DU skal finne nøkkelen din!</center>
+  <hr><hr>
+  <table>
+         <tr>
+            <th style="font-family:courier;">Vårt samarbeid</th>
+            <th style="font-family:courier;">Deres link</th>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Anne</td>
+            <td style="font-family:courier;">Editor</td>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Regine</td>
+            <td style="font-family:courier;">Design m/Najma og Ramla</td>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Ramla</td>
+            <td style="font-family:courier;">Desing m/Najma og Regine</td>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Najma</td>
+            <td style="font-family:courier;">Design m/Regine og Ramla</td>
+          </tr>
+        <tr>
+             <td style="font-family:courier;">Thea</td>
+             <td style="font-family:courier;">Lager HTML m/Vilde og møte-sekretær</td>
+          </tr>
+          <tr>
+             <td style="font-family:courier;">Vilde</td>
+             <td style="font-family:courier;">Lager HTML m/Thea og møte-keiser</td>
+          </tr>
+      </table>
+<br><br>
+<a style="font-family:courier;" href="https://www.w3schools.com">Dette er linken til Anne</a>
+<br><br>
+<a style="font-family:courier;"href="https://www.w3schools.com">Dette er linken til Ramla</a>
+<br><br>
+<a style="font-family:courier;"href="https://www.w3schools.com">Dette er linken til Najma</a>
+<br><br>
+<a style="font-family:courier;" href="https://www.w3schools.com">Dette er linken til Thea</a>
+<br><br>
+<a style="font-family:courier;"href="https://www.w3schools.com">Dette er linken til Regine</a>
+<br><br>
+<a style="font-family:courier;"href="https://www.w3schools.com">Dette er linken til Vilde</a>
 </body>
 </html>
 
