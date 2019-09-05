@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{text-align:center;}
+</style>
+</head>
+<body>
+<img border="5"src = "Etbildeavmeg.jpg" width = "350" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
+<br><br>
+<font style= "font-family:courier;"size="+3"> Vilde Hagtvedt</font>
+<br><br>
+<font style= "font-family:courier;"size="+2"> MindYourKey</font>
+<hr>
+<p style= "font-family:courier;" size="1"> Alder: 21</p>
+<p style= "font-family:courier;" size="1"> Studie: Data</p>
+<p style= "font-family:courier;" size="1">Rolle: Min rolle i "MindYourKey" er møteleder, i tillegg et HTML-samarbeid med Thea. </p>
+</body>
+</html>
 
