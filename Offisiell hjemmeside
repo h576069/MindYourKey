@@ -1,1 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+</style>
+<body>
+  <img border="5"src = "https://media.giphy.com/media/nPIwhYMeBkis0/giphy.gif" width = "350" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
+  <p>Vi ønsker at DU skal finne nøkkelen din!</p>
+<a href="https://www.w3schools.com">Dette er linken til ...</a>
+</body>
+</html>
 
