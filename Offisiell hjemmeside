@@ -17,12 +17,14 @@
 </head>
 <body>
   <img border="5"src = "https://media.giphy.com/media/nPIwhYMeBkis0/giphy.gif" width = "550" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
+<br> <center> MindYourKey</center>
+<br>
   <center style="font-family:courier;" size= "+5"> Vi ønsker at DU skal finne nøkkelen din!</center>
   <hr><hr>
-  <table>
+  <center> <table>
          <tr>
             <th style="font-family:courier;">Vårt samarbeid</th>
-            <th style="font-family:courier;">Deres link</th>
+            <th style="font-family:courier;">Arbeidsfordeling</th>
          </tr>
          <tr>
             <td style="font-family:courier;">Anne</td>
@@ -49,6 +51,7 @@
              <td style="font-family:courier;">Lager HTML m/Thea og møte-keiser</td>
           </tr>
       </table>
+    </center>
 <br><br>
 <a style="font-family:courier;" href="https://www.w3schools.com">Dette er linken til Anne</a>
 <br><br>
@@ -63,4 +66,3 @@
 <a style="font-family:courier;"href="https://www.w3schools.com">Dette er linken til Vilde</a>
 </body>
 </html>
-
