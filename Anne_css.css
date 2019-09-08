@@ -1,0 +1,112 @@
+/* The entire page */
+body {
+    width: 80%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #f0f7f8;
+}
+
+/* The header */
+.header {
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    background-color: #dddddd;/*#e1f0f2;*/
+    margin-top: 0;
+}
+#name {
+    padding-left: 3%;
+    margin-top: 0;
+    float: left;
+    color: rgba(0, 0, 255, 0.5);
+}
+#name:after {
+    content: "Anne Drottning";
+    position: fixed; left: 49px; top: 8px;
+    color: rgba(255, 0, 0, 0.5);
+    margin-top: 0;
+}
+#back {
+    padding-right: 5%;
+    color: black;
+    float: right;
+}
+#back:hover {
+    color: black;
+    text-decoration: underline;
+}
+#back:visited {
+    color: black;
+}
+
+/* The social media buttons */
+.soMe {
+    padding: 5%;
+}
+.some {
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+}
+.fa:hover {
+    color: #66B6bD;
+}
+.some:visited {
+    color: black;
+}
+
+/* The picture */
+.pic {
+    width: 40%;
+    height: 80%;
+    float: right;
+}
+
+/* About me */
+.facts {
+    width: 60%;
+    padding: 2%;
+}
+h3 {
+    padding-right: 2%;
+    display: inline;
+    position: relative;
+    font: 70px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: rgba(0, 0, 255, 0.5);
+}
+h3:after {
+    content: "Om meg";
+    position: absolute; left: 4px;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+/* Quizzes about me */
+.quizer {
+    width: 60%;
+    padding: 2%;
+}
+h4 {
+    padding-right: 2%;
+    display: inline;
+    position: relative;
+    font: 50px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: rgba(0, 0, 255, 0.5);
+}
+h4:after {
+    content: "Meg i følge Quiz";
+    position: absolute; left: 4px;
+    color: rgba(255, 0, 0, 0.5);
+}
+.quiz {
+    
+}
+.quiz:visited {
+    color: #ff6f61;
+}
+.quiz:hover {
+    color: #ffdc50;
+}
+.tab {
+    
+}
