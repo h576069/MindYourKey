@@ -12,6 +12,124 @@
     background: -moz-linear-gradient(right, #2382C4, #C9DCB9);
     background: linear-gradient(to right, #2382C4, #C9DCB9);
     background-color: #2382C4;
+    
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Meny</button>
+  <div class="dropdown-content">
+  	<a href="#">Om Bedriften</a> 
+    <a href="#">Bli Medlem</a> 
+    <a href="#">Anne</a>
+    <a href="#">Ramla</a>
+    <a href="#">Najma </a>
+    <a href="#">Regine</a>
+    <a href="#">Vilde</a>
+    <a href="#">Thea</a>
+  </div>
+</div>
+
+  <img border="5"src = "https://media3.giphy.com/media/3og0IuymsB9sy0C2Vq/giphy.gif" width = "550" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
+<br> <center> MindYourKey</center>
+<br>
+  <center style="font-family:courier;" size= "+5"> Vi ønsker at DU skal finne nøkkelen din!</center>
+  <hr><hr>
+  <center> <table>
+         <tr>
+            <th style="font-family:courier;">Vårt samarbeid</th>
+            <th style="font-family:courier;">Arbeidsfordeling</th>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Anne</td>
+            <td style="font-family:courier;">Editor</td>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Regine</td>
+            <td style="font-family:courier;">Design m/Najma og Ramla</td>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Ramla</td>
+            <td style="font-family:courier;">Desing m/Najma og Regine</td>
+         </tr>
+         <tr>
+            <td style="font-family:courier;">Najma</td>
+            <td style="font-family:courier;">Design m/Regine og Ramla</td>
+          </tr>
+        <tr>
+             <td style="font-family:courier;">Thea</td>
+             <td style="font-family:courier;">Lager HTML m/Vilde og møte-sekretær</td>
+          </tr>
+          <tr>
+             <td style="font-family:courier;">Vilde</td>
+             <td style="font-family:courier;">Lager HTML m/Thea og møte-keiser</td>
+          </tr>
+      </table>
+    </center>
+<br><br>
+</body>
+</html>
+
+------------------------------------- forrige versjon om du ikke liker det vilde: 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  table, th, td {
+           border: 2px solid black;
+           text-align: center;
+        }
+        body {
+    background: -webkit-linear-gradient(left, #2382C4, #C9DCB9);
+    background: -o-linear-gradient(right, #2382C4, #C9DCB9);
+    background: -moz-linear-gradient(right, #2382C4, #C9DCB9);
+    background: linear-gradient(to right, #2382C4, #C9DCB9);
+    background-color: #2382C4;
 }
   </style>
 </head>
