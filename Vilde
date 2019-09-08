@@ -2,19 +2,50 @@
 <html>
 <head>
 <style>
-h1{text-align:center;}
+body {background-color:#507ED9;
+}
+font{text-align: center;
+
+}
+#colorstrip{
+    width: 100%; height: 10px;
+    border-style: solid;
+    border-color: white;
+}
 </style>
 </head>
 <body>
-<img border="5"src = "Etbildeavmeg.jpg" width = "350" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
-<br><br>
-<font style= "font-family:courier;"size="+3"> Vilde Hagtvedt</font>
-<br><br>
-<font style= "font-family:courier;"size="+2"> MindYourKey</font>
+  <span id="logo">Min HTML side</span>
+<div id="colorstrip"/>
+  <style type="text/css">
+#element1 {float:left;}
+#element2 {float:right;}
+#element3 {float:left;}
+#element4 {float:right;}
+</style>
+<br>
+<div id="element1">
+ <font size="+2">MindYourKey</font>
+</div>
+<div id = "element4">
+  TM
+</div>
+<div id="element2">
+ <font size="+2">MindYourKey</font>
+</div>
+<div id="element3">
+  TM
+</div>
+<img border="5" src = "Etbildeavmeg.jpg" width = "350" height="370" style="display: block;margin-left:auto; margin-right: auto;"/>
+<br>
+<center> <strong><font style= "font-family:courier;" size="+3"> Vilde Hagtvedt</center></strong>
 <hr>
-<p style= "font-family:courier;" size="1"> Alder: 21</p>
-<p style= "font-family:courier;" size="1"> Studie: Data</p>
-<p style= "font-family:courier;" size="1">Rolle: Min rolle i "MindYourKey" er møteleder, i tillegg et HTML-samarbeid med Thea. </p>
+<font style= "font-family:courier;" size="+1"> Jeg er 21 år, og studerer til å bli Dataingeniør. </font>
+<br>
+<font style= "font-family:courier;" size="+1">Min rolle i "MindYourKey" er møtekeiser, i tillegg til et HTML-samarbeid med Thea. </font>
+<br> <font style= "font-family:courier;" size="+1"> Når teamet vårt tok en Buzzfeed-Quiz om hvilken karakter fra "Friends" vi ligner mest på, fikk jeg Phoebe.</font>
+<br>
+<hr><strong> <font style="font-family:courier;" size="+1"> Her er linken for å komme tilbake til hovedsiden: </strong>
+<a style="font-family:courier;"href="MindYourKey kopi.html">MindYourKey</a>
 </body>
 </html>
-
