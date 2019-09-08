@@ -1,1 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>THEA</h1>
+<hr>
+<p><b> Navn: </b> Thea Christianslund</p>
+<p><b> Alder: </b> 21 år</p>
+<p><b> Utdanning: </b> Bachelor, Data Ingeniør</p>
+<p><b>Mine hovedoppgaver i prosjektet:</b></p>
+<p>I dette prosjektet er jeg, sammen med Vilde(insert link), en del av HTML-teamet. Samtidig er jeg også møte-sekratær, hvor jeg har ansvar for å notere referater fra møtene.</p>
+<p></p>
+<img src="https://i.ibb.co/74gWxbq/B62723-AD-9-E01-4-B4-D-A7-BB-2-D19-B5-CD5-E98.png" alt="B62723-AD-9-E01-4-B4-D-A7-BB-2-D19-B5-CD5-E98" width="200" border="0"
+style="display: block;margin-left:auto; margin-right: auto;">
 
+</body>
+</html>
