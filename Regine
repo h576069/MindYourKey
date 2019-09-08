@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Regine Drange Eriksen</title>
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: url("Solnedgang2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	max-width:250px;
+	max-height:250px;
+}
+h1 {
+	text-align:center;
+}
+h4 {
+	text-align:center;
+}
+h5{
+	text-align:center;
+}
+h6 {
+	text-align:center;
+}
 
+ul{
+	text-align: left;
+	with:40%;
+	position:relative;
+	left:46%;
+}
+	
+</style>
+
+<body >
+<h1> Regine Drange Eriksen </h1>
+<h5> Design </h5>
+<p><img src="swingbilde2.jpg" alt="Dans"></p>
+<h4> Hobbier </h>
+<ul> 
+		<li>Dans</li>
+		<li>Tegning</li>
+		<li>Maling</li>
+</ul>
+
+<h6>link til framsiden<h6>
+
+
+</body>
+</html>
