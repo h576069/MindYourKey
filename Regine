@@ -30,7 +30,7 @@ h4 {
 h5{
 	text-align:center;
 }
-h6 {
+a {
 	text-align:center;
 }
 
@@ -54,7 +54,7 @@ ul{
 		<li>Maling</li>
 </ul>
 
-<h6>link til framsiden<h6>
+<a href = "offisiell_hjemmeside"> Tilbake til hjemmesiden</a>
 
 
 </body>
