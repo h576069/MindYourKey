@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-<title>Page Title</title>
+<title>MindYourKey</title>
   <style>
   table, th, td {
            border: 2px solid black;
@@ -26,27 +26,26 @@ h2 {
     color: black;
     font-size: 1em;
 }
-
- table.center {
-    width:60%; 
-    display: block;
-    margin-left:auto; 
-    margin-right:auto;
-  }
+  
+.table_container {
+	margin-left: auto; 
+    margin-right: auto;
+    border: 4px; 
+ }
 
 img {
 	border: 4px solid black; 
     display: block;
     margin-left:auto; 
     margin-right: auto;
-    width: 60%
+ 
     }
 	
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%
+
 
 }
 /* Dropdown Button */
@@ -113,7 +112,8 @@ img {
 <br>
   <h2 style="text-align:center"> Vi ønsker at DU skal finne nøkkelen din!</h2>
   <hr><hr>
- <table class="center">
+  <div class="table_container">
+ <table>
          <tr>
             <th style="font-family:courier;">Vårt samarbeid</th>
             <th style="font-family:courier;">Arbeidsfordeling</th>
@@ -143,7 +143,7 @@ img {
              <td style="font-family:courier;">Lager HTML m/Thea og møte-keiser</td>
           </tr>
       </table>
-  
+      </div>
 <br><br>
 </body>
 </html>
