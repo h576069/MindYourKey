@@ -1,7 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
 <head>
   <style>
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
   body {
   background: -webkit-linear-gradient(left, #2382C4, #C9DCB9);
@@ -33,6 +68,21 @@ hr {
   </style>
 </head>
 <body>
+  <div class="dropdown">
+  <button class="dropbtn">Meny</button>
+  <div class="dropdown-content">
+  	<!--<a href="#">Om Bedriften</a>
+    <a href="#">Bli Medlem</a> -->
+    <a href="./Anne.html">Anne</a>
+    <a href="./Ramla.html">Ramla</a>
+    <a href="./Najma.html">Najma </a>
+    <a href="./Regine.html">Regine</a>
+    <a href="./Vilde.html">Vilde</a>
+    <a href="./Thea.html">Thea</a>
+    <a href="./OmBedriften.html">Om Bedriften</a>
+  </div>
+</div>
+
   <h1> MindYourKey <h1>
     <h2> Vår bedrift </h2>
       <hr>
@@ -45,7 +95,9 @@ Dette produktet er for alle som har mistet en nøkkel, eller vet at dette er en 
 <br> <br>
 Det eksisterer lignende produkter på dagens marked, men vi ønsker med vårt produkt å utfordre disse på <br> både pris og kvalitet. Nøkkeldekselet er vanntett, og siden vi bruker en GPS chip er det mulig å spore nøkkelen <br> over et større og samtidig mer nøyaktig område.
 I tillegg festes dette direkte på nøkkelen, dermed kan du enda finne nøkkelen din <br> om så den har falt av nøkkelknippet. På pris er vi også konkurransedyktig med en pris på 250 kr for selve nøkkeldekselet og en månedlig avgift på 150 kr for å kunne utføre sporingen. <br> Produktet har ett års garanti og hvis det ikke skulle virke som ønsket er det mulig å komme inn for å bytte produktet uten ekstra kostnader. </p>
-
+<br><br>
+<a href="PROSJEKT-DEl 2.pdf" download>Klikk her for å vite mer om oss!</a>
 </body>
 </html>
+
 
