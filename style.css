@@ -99,7 +99,10 @@ li{
 .bilde {
     width: 100%;
     background-color: #eff3f7;
-    margin: 1px 30px;   
+    margin: 1px 30px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .bilde img {
