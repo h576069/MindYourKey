@@ -121,7 +121,12 @@ li{
     width: 60%;
     height: auto;
 }    
-
+footer {
+    background-color: #7ab6ee;
+    display: flex;
+    align-items: center;
+    margin-bottom: -50%;
+}
 footer {
     background-color: #7ab6ee;
     display: flex;
