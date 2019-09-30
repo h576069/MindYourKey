@@ -47,6 +47,22 @@ header {
 
 .responsive-menu {
     display: none;
+    position: fixed;
+    background-color: #94b1ee;
+    width: 12%;
+}
+.responsive-menu a {
+  display: block;
+  padding: 10%;
+  color: black;
+  text-decoration: none;
+
+}
+.responsive-menu a:hover {
+  background-color: #bbd7ff;
+}
+.responsive-menu a:visited {
+  color: black;
 }
 
 .expand {
