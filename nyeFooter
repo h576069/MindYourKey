@@ -1,0 +1,25 @@
+/* Lim inn rett over 
+    </div>
+</body>
+
+</html>
+
+som står nederst i dokumentet
+*/ 
+
+<footer>
+        <div class="bunn O">
+            <p><b>Om oss</b><p>
+                    <p>dette er litt informasjon om oss</p>
+        </div>
+        <div class="bunn k">
+            <p><b>Kontakt</b></p>
+            <p>tlf: 55 58 58 00</p>
+            <p>e-postadresse: post@hvl.no</p>
+        </div>
+        <div class="bunn a">
+            <p><b>Adresse</b></p>
+            <p>Inndalsveien 28, 5063 Bergen</p>
+        </div>
+
+    </footer>
