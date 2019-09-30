@@ -71,7 +71,7 @@ header {
 }
 
 .logo {
-    background-image: url("logo.jpg");
+  /*  background-image: url("logo.jpg");
     background-size: 300px;
     background-repeat: no-repeat;
     background-color: black;
@@ -81,7 +81,13 @@ header {
     border-radius: 10px;
     border:2px solid #222222;
     padding:10px;
-    position: relative;
+    position: relative; */
+}
+.logo img{
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    border:2px solid #222222;
 }
 
 .luft{
