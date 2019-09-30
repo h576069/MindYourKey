@@ -77,21 +77,7 @@ header {
 .expand {
     display: block !important;
 }
-/* 
-.logo {
-  /*  background-image: url("logo.jpg");
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-color: black;
-    height: 52px;
-    width:279px;
-    text-indent: -9999999px; 
-    border-radius: 10px;
-    border:2px solid #222222;
-    padding:10px;
-    position: relative; 
-}
-*/
+
 .logo img{
     height: auto;
     width: 300px;
@@ -136,13 +122,6 @@ footer {
     align-items: center;
     margin-bottom: -50%;
 }
-footer {
-    background-color: #7ab6ee;
-    display: flex;
-    align-items: center;
-    margin-bottom: -50%;
-}
-
 .bunn {
     width: 100%;
     margin-left: 30px;
@@ -153,7 +132,7 @@ img.bilderr{
     -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(0%); /* FF 35+ */
 }
-  img:hover {
+  #aboutus:hover {
     -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(100%); /* FF 35+ */
   }
