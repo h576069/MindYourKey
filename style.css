@@ -22,7 +22,14 @@ header {
     padding: 10px;  
      
 }
-
+.gif img {
+        border: 0px solid black; 
+        display: block;
+        margin-left:auto; 
+        margin-right: auto;
+     
+    
+}
 .menu-btn div {
     position: absolute;
     left: 100%;
@@ -69,7 +76,7 @@ header {
 .expand {
     display: block !important;
 }
-
+/* 
 .logo {
   /*  background-image: url("logo.jpg");
     background-size: 300px;
@@ -81,8 +88,9 @@ header {
     border-radius: 10px;
     border:2px solid #222222;
     padding:10px;
-    position: relative; */
+    position: relative; 
 }
+*/
 .logo img{
     height: auto;
     width: 300px;
@@ -138,3 +146,33 @@ footer {
     width: 100%;
     margin-left: 30px;
 }
+
+img bilderr{
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
+}
+  img:hover {
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+  }
+  table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;  
+  }
+  th, td {
+    padding: 5px;
+    position: center;
+    justify-content: space-between;
+  }
+
+  .mittBilde img {
+    width: 70%;
+    margin: 1px 30px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
