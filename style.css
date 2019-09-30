@@ -148,7 +148,7 @@ footer {
     margin-left: 30px;
 }
 
-img bilderr{
+img.bilderr{
     transition: filter .5s ease-in-out;
     -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(0%); /* FF 35+ */
