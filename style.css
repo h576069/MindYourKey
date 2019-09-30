@@ -93,7 +93,7 @@ header {
 
 }
 li{
-    
+    list-style-type: none;
 }
 
 .bilde {
