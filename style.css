@@ -80,7 +80,6 @@ header {
 
 .info {
     margin: 1px 30px;
-    background-color: #eff3f7;
     width: 100%;
 }
 li{
@@ -89,7 +88,6 @@ li{
 
 .bilde {
     width: 100%;
-    background-color: #eff3f7;
     margin: 1px 30px;  
     justify-content: center;
     align-items: center;
