@@ -13,34 +13,27 @@
 </head>
 
 <body>
-        <div class="main">
-                <header>
-                    <div class="mobile-nav">
-                        <div class="menu-btn" id="menu-btn">
-                            <div></div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="responsive-menu">
-                            <ul>
-                                <li>Om prosjektet</li>
-                                <li>Medlemmer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="logo">
-                    <a href="./Offisiell_hjemmeside.html">
-                        <img src="logo.jpg" alt="loggo" width="200">
-                            </a>
-                    </a>
-
-
-                    </div>
-                    <div class="luft">
-                
-                    </div>
-                </header>
+        <header>
+          <nav>
+            <div class="menu-btn" id="menu-btn">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="responsive-menu" id="res-men">
+                <li><a href="./index.html" onClick="closeNav()">Hjem</a></li>
+                <li><a href="./Ombedriften.html" onClick="closeNav()">Om Prosjektet</a></li>
+                <li><a href="./aboutus.html" onClick="closeNav()">Om Oss</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="logo">
+            <a href="./index.html">
+              <img src="logo.jpg" alt="logo">
+            </a>
+          </div>
+          <div class="luft"></div>
+        </header>
 <h1 style="text-align:center">Hvem er vi?</h1>
 <hr><hr>
 
@@ -75,8 +68,9 @@
 </p>
 </div>
 <div class="tilbake">
-    <a href="./Offisiell_hjemmeside.html"> Tilbake </a>
+    <a href="./index.html"> Tilbake </a>
 </div>
+    <script src="./hamburger2.js"></script>
 <footer>
     <div class="bunn O">
         <p><b>Om oss</b><p>
