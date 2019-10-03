@@ -135,6 +135,9 @@ a:hover {
     display: flex;
     text-align: center;
     flex:1;
+    margin: 15px;  
+  
+  
 }
 
 .info {
