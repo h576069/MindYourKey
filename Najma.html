@@ -15,27 +15,20 @@
 <body>
 
     <div class="main">
-        <header>
-            <nav role="navigation">
-                <div id="menuToggle">
-
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <a href="./Offisiell_hjemmeside">
-                            <li>Hjem</li>
-                        </a>
-                        <a href="./Ombedriften">
-                            <li>Om prosjektet</li>
-                        </a>
-                        <a href="./aboutus">
-                            <li>Om oss</li>
-                        </a>
-                    </ul>
-                </div>
-            </nav>
+       <header>
+          <nav>
+            <div class="menu-btn" id="menu-btn">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="responsive-menu" id="res-men">
+                <li><a href="./index.html" onClick="closeNav()">Hjem</a></li>
+                <li><a href="./Ombedriften.html" onClick="closeNav()">Om Prosjektet</a></li>
+                <li><a href="./aboutus.html" onClick="closeNav()">Om Oss</a></li>
+              </ul>
+            </div>
+          </nav>
             <div class="logo">
                 <a href="./Offisiell_hjemmeside.html">
                     <img src="logo.jpg" alt="logo">
