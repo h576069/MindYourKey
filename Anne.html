@@ -3,7 +3,8 @@
     <head>
         <title>Anne Drottning</title>
         <!-- Link to font awesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        -->
         <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,25 +19,32 @@
     <body>
       <div class="main">
         <header>
-          <div class="mobile-nav">
+          <nav role="navigation">
               <div class="menu-btn" id="menu-btn">
-                  <div></div>
+
+                  <input type="checkbox" />
                   <span></span>
                   <span></span>
                   <span></span>
+                  <ul class="responsive-menu" id="res-men">
+                    <a href="./Offisiell_hjemmeside.html" onClick="closeNav()">
+                      <li>Hjem</li>
+                    </a>
+                    <a href="./Ombedriften.html" onClick="closeNav()">
+                      <li>Om Prosjektet</li>
+                    </a>
+                    <a href="./aboutus.html" onClick="closeNav()">
+                      <li>Om Oss</li>
+                    </a>
+                  </ul>
               </div>
-              <div class="responsive-menu" id="res-men">
-                <a href="./Offisiell_hjemmeside" onClick="closeNav()">Hjem</a>
-                <a href="./Ombedriften" onClick="closeNav()">Om Prosjektet</a>
-                <a href="./aboutus" onClick="closeNav()">Om Oss </a>
-              </div>
+          </nav>
+          <div class="logo">
+              <a href="./Offisiell_hjemmeside.html">
+                <img src="logo.jpg" alt="logo">
+              </a>
           </div>
-          <div class="logo"><!-- onload="closeNav()">-->
-              <a href="./Offisiell_hjemmeside.html"></a>Logo
-          </div>
-          <div class="luft">
-              <p>luft luft </p>
-          </div>
+          <div class="luft"></div>
         </header>
         <div class="hoved">
           <div class="info">
