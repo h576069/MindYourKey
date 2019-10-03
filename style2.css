@@ -216,3 +216,7 @@ table.bilderr {
   align-items: center;
   display: flex;
 }
+
+.framside {
+    margin: 20px;
+}
