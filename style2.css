@@ -96,7 +96,7 @@ a:hover {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #6696ac;
+  background: #396268;
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -151,7 +151,7 @@ li{
     height: auto;
 }
 header {
-    background-color: #6696ac;
+    background-color: #396268;
     display: flex;
     width:100%;
     justify-content: space-between;
@@ -159,7 +159,7 @@ header {
 
 }
 footer {
-    background-color: #6696ac;
+    background-color: #396268;
     display: flex;
     align-items: center;
     bottom: 0;
