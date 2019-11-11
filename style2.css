@@ -11,27 +11,6 @@ body {
     font-family: 'Roboto Slab', serif;
     height: 100vh;
 }
-@media all and (max-width: 480px){
-  .gif img{  
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    height: auto; 
-  }
-  footer {
-    background-color: #396268;
-    display: flex;
-    align-items: center;
-    bottom: 0;
-    width: 90%;
-    height: 20vh;
-    padding: 0px 0px 0px 0px;
-  }
-  .bunn_O{
-    width:50%;
-    margin-left: 0px;
-  }
-}
 
 .main {
     display: flex;
