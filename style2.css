@@ -13,7 +13,7 @@ body {
 }
 @media screen and (max-device-width: 1400px) 
 and (min-device-width: 480px) {
-  .gif{  
+  .gif img{  
     display: flex;
     justify-content: center;
     width: 50%;
