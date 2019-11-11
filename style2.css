@@ -237,15 +237,17 @@ table.bilderr {
   width: 150px;
   border-radius: 10px;
   border: 2px solid #222222;
-  background-color: plum;
+  background-color: rgb(123, 124, 122);
+  text-align: center;
 } 
 .knapp2{
   padding: 10px; 
   height: auto;
-  width: 100px;
+  width: 150px;
   border-radius: 10px;
   border: 2px solid #222222;
-  background-color: plum;
+  background-color: rgb(123, 124, 122);
+  text-align: center;
 }
 
 
