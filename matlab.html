@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>MindYourKey</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            <nav>
+                <div class="menu-btn" id="menu-btn">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="responsive-menu" id="res-men">
+                        <li><a href="./index.html" onClick="closeNav()">Hjem</a></li>
+                        <li><a href="./Ombedriften.html" onClick="closeNav()">Om Prosjektet</a></li>
+                        <li><a href="./aboutus.html" onClick="closeNav()">Om Oss</a></li>
+                        <li><a href="./matlab.html" onClick="closeNav()">Matlab</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="luft"></div>
+        </header>
+        <div class="framside">
+            <div class = "mat">
+                <h1>Matlabkode</h1>
+            </div>
+            <div class="matlab">
+                <p><a href="./geodata.m" download>Last ned matlabkode</a></p>
+            </div>
+        </div>
+        <pre>
+            <code>
+            <span class="keyword">function</span> simple_gui2
+                <span class="comment">% SIMPLE_GUI2 Select a data set from the pop-up menu and display</span>
+                f = figure(<span class="string">'Position'</span>,[50,700,600,400]);
+                <span class="comment">%left bottom width height 450 285</span>
+            
+                h = [];
+            
+                <span class="comment">% Construct the components.</span>
+                h(1) = uicontrol(<span class="string">'Style'</span>,<span class="string">'popupmenu'</span>,<span class="keyword">...</span>
+                           <span class="string">'String'</span>,{<span class="string">'Peaks'</span>,<span class="string">'Membrane'</span>,<span class="string">'Sinc'</span>, <span class="string">'Fold'</span>, <span class="string">'Hole'</span>},<span class="keyword">...</span>
+                           <span class="string">'Position'</span>,[500,20,100,25],<span class="keyword">...</span>
+                           <span class="string">'Callback'</span>,@popup_menu_Callback);
+            
+                <span class="comment">% 'Position', [50, 30, 255, 255]</span>
+                h(2) = axes(<span class="string">'Units'</span>,<span class="string">'pixels'</span>,<span class="string">'Position'</span>,[50,30,350,350]);
+            
+                <span class="comment">% Knapp som roterer objektet (rundt z aksen) med 5 grader:</span>
+                h(3) = uicontrol(<span class="string">'String'</span>, <span class="string">'Rotate'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 50, 100, 25],<span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_rotate_Callback);
+            
+                <span class="comment">% Knapp som viser bildet ovenfra:</span>
+                h(4) = uicontrol(<span class="string">'String'</span>, <span class="string">'Above'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 80, 100, 25],<span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_above_Callback);
+            
+                <span class="comment">% Knapp som viser bildet fra x, z perspektiv:</span>
+                h(5) = uicontrol(<span class="string">'String'</span>, <span class="string">'Sideview 1'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 110, 100, 25],<span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_side1_Callback);
+            
+                h(6) = uicontrol(<span class="string">'String'</span>, <span class="string">'Sideview 2'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 140, 100, 25],<span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_side2_Callback);
+            
+                <span class="comment">% Tilbake til den originale</span>
+                h(7) = uicontrol(<span class="string">'String'</span>, <span class="string">'Original'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 170, 100, 25], <span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_original_Callback);
+            
+                <span class="comment">% Timer:</span>
+                h(8) = uicontrol(<span class="string">'Style'</span>, <span class="string">'text'</span>,<span class="keyword">...</span>
+                    <span class="string">'Unit'</span>, <span class="string">'pix'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 350, 100, 25], <span class="keyword">...</span>
+                    <span class="string">'String'</span>, <span class="string">'Time: 00'</span>);
+            
+                <span class="comment">% Knapper for start og stopp av timeren:</span>
+                h(9) = uicontrol(<span class="string">'String'</span>, <span class="string">'Start Tid'</span>,<span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 200, 100, 25], <span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_timerStart);
+            
+                h(10) = uicontrol(<span class="string">'String'</span>, <span class="string">'Stopp Tid'</span>, <span class="keyword">...</span>
+                    <span class="string">'Position'</span>, [500, 230, 100, 25],<span class="keyword">...</span>
+                    <span class="string">'Callback'</span>, @button_timerStop);
+            
+            
+                <span class="comment">% Assure resize automatically.</span>
+                f.Units = <span class="string">'normalized'</span>;
+                set(h, <span class="string">'Units'</span>, <span class="string">'normalized'</span>);
+                set(h, <span class="string">'FontSize'</span>, 12);
+            
+                <span class="comment">% Generate the data to plot.</span>
+                peaks_data = peaks(35);
+                membrane_data = membrane;
+                [x,y] = meshgrid(-8:.5:8);
+                r = sqrt(x.^2+y.^2) + eps;
+                sinc_data = sin(r)./r;
+                fold_data = x*y.^3 - y*x.^3;
+                hole_data = -1./(x.^2+y.^2);
+            
+                <span class="comment">% Create a plot in the axes.</span>
+                current_data = peaks_data;
+                s = surf(current_data);
+            
+                <span class="keyword">function</span> button_rotate_Callback(source, eventdata)
+                    rotate(s, [0 0 1], 5);
+                <span class="keyword">end</span>
+            
+                <span class="keyword">function</span> button_above_Callback(source, eventdata)
+                    view(2);
+                <span class="keyword">end</span>
+            
+                <span class="keyword">function</span> button_side1_Callback(source, eventdata)
+                    view(90, 0);
+                <span class="keyword">end</span>
+            
+                <span class="keyword">function</span> button_side2_Callback(source, eventdata)
+                    view(180, 0);
+                <span class="keyword">end</span>
+            
+                <span class="keyword">function</span> button_original_Callback(source, eventdata)
+                    view(3);
+                <span class="keyword">end</span>
+            
+                <span class="comment">% Antall sekunder n&aring;:</span>
+                START = 60 - str2double(datestr(now, <span class="string">'ss'</span>));
+                <span class="comment">% Oppretter timer element:</span>
+                tmr = timer(<span class="string">'Name'</span>, <span class="string">'Reminder'</span>, <span class="keyword">...</span>
+                    <span class="string">'Period'</span>, 5, <span class="keyword">...</span><span class="comment">%'StartDelay', START, ...</span>
+                    <span class="string">'TasksToExecute'</span>, inf,<span class="keyword">...</span>
+                    <span class="string">'ExecutionMode'</span>, <span class="string">'fixedSpacing'</span>, <span class="keyword">...</span>
+                    <span class="string">'TimerFcn'</span>, {@oppdater});
+            
+                curr_time = 0;
+            
+                <span class="keyword">function</span> button_timerStart(source, eventdata)
+                    set (h(8), <span class="string">'String'</span>, <span class="string">'Time: 00'</span>);
+                    start(tmr);
+                <span class="keyword">end</span>
+            
+                <span class="keyword">function</span> button_timerStop(source, eventdata)
+                    stop(tmr);
+                    delete(tmr);
+                <span class="keyword">end</span>
+            
+                <span class="keyword">function</span> oppdater(varargin)
+                    curr_time = curr_time + 5;
+                    curr_str  = <span class="string">"Time: "</span> + curr_time;
+                    set(h(8), <span class="string">'String'</span>, curr_str);
+                    button_rotate_Callback();
+                    <span class="keyword">if</span> mod(curr_time, 60) == 0
+                        X = load(<span class="string">'gong.mat'</span>);
+                        sound(X.y, X.Fs*2.5);
+                        clear <span class="string">X</span>;
+                    <span class="keyword">end</span>
+                <span class="keyword">end</span>
+            
+               <span class="comment">%  Pop-up menu callback. Read the pop-up menu Value property to</span>
+               <span class="keyword">function</span> popup_menu_Callback(source,eventdata)
+                  <span class="comment">% Determine the selected data set.</span>
+                  str = get(source, <span class="string">'String'</span>);
+                  val = get(source,<span class="string">'Value'</span>);
+                  <span class="comment">% Set current data to the selected data set.</span>
+                  <span class="keyword">switch</span> str{val}
+                  <span class="keyword">case</span> <span class="string">'Peaks'</span> <span class="comment">% User selects Peaks.</span>
+                     current_data = peaks_data;
+                  <span class="keyword">case</span> <span class="string">'Membrane'</span>
+                     current_data = membrane_data;
+                  <span class="keyword">case</span> <span class="string">'Sinc'</span>
+                     current_data = sinc_data;
+                  <span class="keyword">case</span> <span class="string">'Fold'</span>
+                     current_data = fold_data;
+                  <span class="keyword">case</span> <span class="string">'Hole'</span>
+                     current_data = hole_data;
+                  <span class="keyword">end</span>
+                  surf(current_data);
+               <span class="keyword">end</span>
+            <span class="keyword">end</span> 
+            </code>
+        </pre>
+        <script src="./hamburger2.js"></script>
+        <footer>
+            <div class="bunn O">
+                <p><b>Om oss</b>
+                    <p>
+                        <p>Oppstartsbedrift for nøkkelfinning.</p>
+            </div>
+            <div class="bunn k">
+                <p><b>Kontakt</b></p>
+                <p>tlf: 55 58 58 00</p>
+                <p>e-postadresse: post@hvl.no</p>
+            </div>
+            <div class="bunn a">
+                <p><b>Adresse</b></p>
+                <p>Inndalsveien 28, 5063 Bergen</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

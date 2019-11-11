@@ -21,6 +21,18 @@ body {
   display: flex;
   justify-content: center;
 }
+.code{
+  display: flex;
+  justify-content: center;
+}
+.matlab{
+  display: flex;
+  justify-content: center;
+}
+.mat{
+  display: flex;
+  justify-content: center;
+}
 
 a {
   text-decoration: none;
