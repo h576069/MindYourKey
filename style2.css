@@ -212,6 +212,15 @@ table.bilderr {
     margin: 50px;
 }
 
+.gruppebilde img{
+  width: 50%;
+  float: right;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #222222;
+
+}
+
 .om_oss{
   margin: 50px 0 50px 0;
   text-align: center;
