@@ -15,7 +15,7 @@ body {
   .gif img{  
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     height: auto; 
   }
   footer {
@@ -23,12 +23,12 @@ body {
     display: flex;
     align-items: center;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     height: 20vh;
     padding: 0px 0px 0px 0px;
   }
   .bunn_O{
-    width: 80%;
+    width:50%;
     margin-left: 0px;
   }
 }
