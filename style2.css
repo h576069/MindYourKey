@@ -11,6 +11,14 @@ body {
     font-family: 'Roboto Slab', serif;
     height: 100vh;
 }
+@media only screen and (max-width: 600px) {
+  .gif{  
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: auto; 
+  }
+}
 
 .main {
     display: flex;
