@@ -220,3 +220,25 @@ table.bilderr {
 .bilderr{
   margin: 1px 0 0 0;
 }
+
+.knapper {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: plum;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.knapp1{
+  padding: 20px; 
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid #222222;
+
+} 
+
+
+
