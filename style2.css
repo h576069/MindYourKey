@@ -225,20 +225,28 @@ table.bilderr {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  background-color: plum;
+ 
   padding: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 .knapp1{
-  padding: 20px; 
+  padding: 10px; 
   height: auto;
-  width: 300px;
+  width: 150px;
   border-radius: 10px;
   border: 2px solid #222222;
-
+  background-color: plum;
 } 
+.knapp2{
+  padding: 10px; 
+  height: auto;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid #222222;
+  background-color: plum;
+}
 
 
 
