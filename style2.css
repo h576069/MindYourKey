@@ -126,6 +126,13 @@ a:hover {
     margin: 20px 0 0 0;
 }
 
+.video{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+
+}
 .logo img {
   height: auto;
   width: 300px;
