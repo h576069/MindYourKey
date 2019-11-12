@@ -33,6 +33,11 @@ body {
   display: flex;
   justify-content: center;
 }
+.matcode{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
 a {
   text-decoration: none;
@@ -130,8 +135,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   display: flex;
-  
-
+}
+.video video{
+  width: 500px;
+  height: auto;
 }
 .logo img {
   height: auto;
